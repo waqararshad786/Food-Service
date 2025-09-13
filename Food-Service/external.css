@@ -1,0 +1,294 @@
+/* General reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(126, 120, 120);
+}
+
+.logo img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Hero section */
+.head {
+    height: 500px;
+    width: 100%;
+    background: url(bg1.avif) no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.head h1 {
+    font-size: 4em;
+}
+
+.head p {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.btn {
+    background-color: rgb(234, 131, 131);
+    padding: 14px 20px;
+    border-radius: 30px;
+    border: 2px solid white;
+    color: white;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/* Services section */
+.sec2 {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.box1, .box2, .box3 {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px;
+    background-color: rgb(149, 119, 119);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.box1 img, .box2 img, .box3 img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+    padding: 40px 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.con img {
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+
+/* Contact Us section */
+.end {
+    background: url(bc2.jpg);
+    background-size: cover;
+    padding: 40px 20px;
+    color: #000;
+    opacity: 0.95;
+}
+
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.end h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.end input, .end textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 2px solid #333;
+}
+
+#Message {
+    height: 100px;
+}
+
+.end button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    margin: 20px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+   
+    .navbar .logo img{
+        height: 60px;
+        width: 60px;
+    }
+    .menu{
+        display: flex;
+        /* flex-direction: row; */
+    }
+
+    .menu ul {
+        /* flex-direction: column; */
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+
+    .head h1 {
+        font-size: 2.5em;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .box1, .box2, .box3 {
+        max-width: 90%;
+    }
+
+    .end {
+        padding: 20px;
+    }
+
+    .end h1 {
+        font-size: 2em;
+    }
+
+    .end input, .end textarea {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0;
+        display: flex;
+        /* display: none; */
+    }
+    .navbar .logo img{
+        height: 35px;
+        width: 35px;
+    }
+
+    .menu ul li {
+        margin: 5px 0;
+    }
+    .navbar ul li a{
+        font-size: 13px;
+    }
+
+    .head h1 {
+        font-size: 2em;
+    }
+
+    .head p {
+        font-size: 1em;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        margin-top: 20px;
+    }
+
+    .container {
+        gap: 10px;
+    }
+
+    .box1, .box2, .box3 {
+        max-width: 100%;
+    }
+
+    .end input, .end textarea {
+        padding: 10px;
+    }
+
+    .end button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+    .con img{
+        height: 40px;
+        width: 40px;
+    }
+}
